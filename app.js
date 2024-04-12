@@ -44,7 +44,11 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"], //
+    origin: [
+      "http://localhost:3000",
+      "https://chat-app-44f8e.web.app/",
+      "https://chat-app-44f8e.firebaseapp.com/",
+    ], //
 
     methods: ["GET", "PATCH", "POST", "DELETE", "PUT"],
 
