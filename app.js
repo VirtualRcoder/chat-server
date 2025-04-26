@@ -44,9 +44,9 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://chat-app-44f8e.web.app/"], //
+    origins: ["http://localhost:3000", "https://chat-app-44f8e.web.app/"], //
 
-    methods: ["GET", "PATCH", "POST", "DELETE", "PUT"],
+    method: ["GET", "PATCH", "POST", "DELETE", "PUT"],
 
     credentials: true,
 
