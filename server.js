@@ -25,8 +25,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://chat-app-44f8e.web.app/"],
-    methods: ["GET", "POST"],
+    origins: ["http://localhost:3000", "https://chat-app-44f8e.web.app/"],
+    method: ["GET", "POST"],
   },
 });
 
